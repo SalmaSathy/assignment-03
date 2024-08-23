@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- goggle fonts end -->
+    <!-- font awesome line -->
+    <script
+      src="https://kit.fontawesome.com/4aabd13637.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind css link starts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: " rgb(171, 239, 95)",
+              secondary: "rgb(17, 17, 17)",
+              body: "rgb(248, 246, 243)",
+              accent: "rgb(106, 151, 57)",
+              body_neutral: "rgb(51, 51, 51)",
+              btn: "rgb(171, 239, 95)",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            backgroundImage: {
+              leaf1: "url('./images/leaf01.png')",
+              call_to_action: "url('./images/call.jpg')",
+              testimonials: "url('./images/testimonials.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+
     <title>Assignment-03</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="font-manrope">
+    <!-- header starts -->
+    <header>
+      <!-- nav starts -->
+    <nav>
+        <div class="navbar bg-base-100 w-10/12 mx-auto">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1.5"></i>
+            <a class=" text-3xl font-extrabold" href="#"> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal mx-1 font-normal text-base mr-16">
+                    <li class="hover:font-extrabold"><a>Home</a></li>
+                    <li class="hover:font-extrabold"><a>Services</a></li>
+                    <li class="hover:font-extrabold"><a>Portfolio</a></li>
+                    <li class="hover:font-extrabold"><a>Blogs</a></li>
+                    <li class="hover:font-extrabold"><a>Contact Us</a></li>
+                  </ul>
+            </div>
+            <div class="navbar-end hidden lg:block gap-1 ">
+                <a href=""
+                ><i
+                  class="fa-solid fa-magnifying-glass bg-slate-200 rounded-full p-2"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-cart-shopping bg-slate-200 rounded-full p-2"
+                ></i
+              ></a>
+                <a class="btn bg-primary rounded-3xl font-extrabold text-lg"
+                >Book Consult
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-xl text-white p-1"
+                ></i>
+              </a>
+              </div>
+          </div>
+    </nav>
+       
+<!-- nav ends -->
+    </header>
+    <!-- header ends -->
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
